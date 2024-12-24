@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create GitHub Account & SSH Key</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Create GitHub Account & SSH Key</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About GitHub</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>How to Create a GitHub Account</h2>
+        <p>Follow these steps to create your GitHub account:</p>
+        <ol>
+            <li>Visit <a href="https://github.com/join" target="_blank">GitHub Signup Page</a>.</li>
+            <li>Enter your username, email, and password.</li>
+            <li>Verify your email address to complete the registration process.</li>
+        </ol>
+
+        <h2>Creating an SSH Key for GitHub</h2>
+        <p>SSH keys provide a secure way to connect to GitHub without using your password each time. Here’s how to create an SSH key:</p>
+        <ol>
+            <li>Open your terminal (or Git Bash if you're using Windows).</li>
+            <li>Generate a new SSH key by running the following command:</li>
+            <pre>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</pre>
+            <li>Follow the instructions to save the key and set a passphrase.</li>
+            <li>Copy the SSH key to your clipboard:</li>
+            <pre>cat ~/.ssh/id_rsa.pub</pre>
+            <li>Go to your GitHub account settings, click "SSH and GPG keys," then "New SSH key."</li>
+            <li>Paste the key into the field and click "Add SSH key."</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GitHub Tutorial. All rights reserved.</p>
+    </footer>
+</body>
+</html>
